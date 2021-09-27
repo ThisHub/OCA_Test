@@ -15,6 +15,8 @@ public class Main {
         Explanation explanation = new Explanation();
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
+        int total = 0;
+        int correct = 0;
 
         System.out.println("!!!Heads up, One question you will find an image.\n" +
                 "This image will barely be recognisable.\n" +
@@ -33,14 +35,17 @@ public class Main {
         while (go.toLowerCase(Locale.ROOT).equals("y")){
             int questionNo = random.nextInt(199);
             System.out.println(questions.questions.get(questionNo));
+            total++;
             System.out.print("Your answer: ");
             String answer = scanner.next();
             if (answer.toLowerCase(Locale.ROOT).equals(answers.answers.get(questionNo).toLowerCase(Locale.ROOT))){
                 System.out.println("Correct!, here is why: " + explanation.explanations.get(questionNo));
+                correct++;
             }
             else
                 System.out.println("Incorrect. Better luck next time here is the explanation: \n" + explanation.explanations.get(questionNo));
-            System.out.println("Press enter to continue, press C to stop");
+            System.out.println("\nYour current score is "+correct + "/" + total + " or " + (correct/total)*100 + "%");
+            System.out.println("\nPress enter to continue, press C to stop");
             while (!go.toLowerCase(Locale.ROOT).equals("")||!go.toLowerCase(Locale.ROOT).equals("c")){
                 scanner.nextLine();
                 go = scanner.nextLine();
