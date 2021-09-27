@@ -1754,22 +1754,159 @@ public class Questions {
                     "B. dimensions[\"three\"][3]\n" +
                     "C. dimensions[2][2]\n" +
                     "D. dimensions[3][3]");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
+            add("How many lines does the following code output?\n" +
+                    "String[] days = new String[] { \"Sunday\", \"Monday\", \"Tuesday\",\n" +
+                    "\"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\" };\n" +
+                    "for (int i = 1; i <= days.length; i++)\n" +
+                    "System.out.println(days[i]);\n" +
+                    "A. Six\n" +
+                    "B. Seven\n" +
+                    "C. The code does not compile.\n" +
+                    "D. The code compiles but throws an exception at runtime.");
+            add("What is the output of the following when run as java FirstName Wolfie?\n" +
+                    "public class FirstName {\n" +
+                    "public static void main(String... names) {\n" +
+                    "System.out.println(names[1]);\n" +
+                    "}\n" +
+                    "}\n" +
+                    "A. FirstName\n" +
+                    "B. Wolfie\n" +
+                    "C. The code throws an ArrayIndexOutOfBoundsException.\n" +
+                    "D. The code throws a NullPointerException.");
+            add("Which is the first line to prevent this code from compiling and running without error?\n" +
+                    "char[][] ticTacToe = new char[3][3]; // r1\n" +
+                    "ticTacToe[0][0] = 'X'; // r2\n" +
+                    "ticTacToe[1][1] = 'X';\n" +
+                    "ticTacToe[2][2] = 'X';\n" +
+                    "System.out.println(ticTacToe.length + \" in a row!\"); // r3\n" +
+                    "A. Line r1\n" +
+                    "B. Line r2\n" +
+                    "C. Line r3\n" +
+                    "D. None of the above");
+            add("What is the output of the following when run as java Count 1 2?\n" +
+                    "public class Count {\n" +
+                    "public static void main(String target[]) {\n" +
+                    "System.out.println(target.length());\n" +
+                    "}\n" +
+                    "}\n" +
+                    "A. 0\n" +
+                    "B. 1\n" +
+                    "C. 2\n" +
+                    "D. The code does not compile.");
+            add("How many dimensions does the array reference moreBools allow?\n" +
+                    "boolean[][] bools[], moreBools;\n" +
+                    "A. One dimension\n" +
+                    "B. Two dimensions\n" +
+                    "C. Three dimensions\n" +
+                    "D. None of the above");
+            add("What is the result of the following when called as java counting.Binary?\n" +
+                    "package counting;\n" +
+                    "import java.util.*;\n" +
+                    "public class Binary {\n" +
+                    "   public static void main(String... args) {\n" +
+                    "       Arrays.sort(args);\n" +
+                    "       System.out.println(Arrays.toString(args));\n" +
+                    "   }\n" +
+                    "}\n" +
+                    "A. null\n" +
+                    "B. []\n" +
+                    "C. The code does not compile.\n" +
+                    "D. The code compiles but throws an exception at runtime.");
+            add("What does the following output?\n" +
+                    "String[] os = new String[] { \"Mac\", \"Linux\", \"Windows\" };\n" +
+                    "System.out.println(Arrays.binarySearch(os, \"Linux\"));\n" +
+                    "A. 0\n" +
+                    "B. 1\n" +
+                    "C. 2\n" +
+                    "D. The output is not defined.");
+            add("What is the result of running the following program?\n" +
+                    "1: package fun;\n" +
+                    "2: public class Sudoku {\n" +
+                    "3: static int[][] game;\n" +
+                    "4:\n" +
+                    "5:     public static void main(String[] args) {\n" +
+                    "6:         game[3][3] = 6;\n" +
+                    "7:         Object[] obj = game;\n" +
+                    "8:         game[3][3] = \"X\";\n" +
+                    "9:         System.out.println(game[3][3]);\n" +
+                    "10:    }\n" +
+                    "11: }\n" +
+                    "A. X\n" +
+                    "B. The code does not compile.\n" +
+                    "C. The code compiles but throws a NullPointerException at runtime.\n" +
+                    "D. The code compiles but throws a different exception at runtime.");
+            add("What is the output of the following?\n" +
+                    "String[][] listing = new String[][] { { \"Book\" }, { \"Game\", \"29.99\" } };\n" +
+                    "System.out.println(listing.length + \" \" + listing[0].length);\n" +
+                    "A. 2 1\n" +
+                    "B. 2 2\n" +
+                    "C. The code does not compile.\n" +
+                    "D. The code compiles but throws an exception at runtime.");
+            add("What is the output of the following when run as java FirstName?\n" +
+                    "public class FirstName {\n" +
+                    "   public static void main(String[] names) {\n" +
+                    "       System.out.println(names[0]);\n" +
+                    "   }\n" +
+                    "}\n" +
+                    "A. FirstName\n" +
+                    "B. The code does not compile.\n" +
+                    "C. The code throws an ArrayIndexOutOfBoundsException.\n" +
+                    "D. The code throws a NullPointerException.");
+            add("How many lines does the following code output?\n" +
+                    "String[] days = new String[] { \"Sunday\", \"Monday\", \"Tuesday\",\n" +
+                    "\"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\" };\n" +
+                    "for (int i = 1; i < days.length; i++)\n" +
+                    "System.out.println(days[i]);\n" +
+                    "A. Six\n" +
+                    "B. Seven\n" +
+                    "C. The code does not compile.\n" +
+                    "D. The code compiles but throws an exception at runtime.");
+            add("What is the output of the following when run as java Count \"1 2\"?\n" +
+                    "public class Count {\n" +
+                    "   public static void main(String target[]) {\n" +
+                    "       System.out.println(target.length);\n" +
+                    "   }\n" +
+                    "}\n" +
+                    "A. 0\n" +
+                    "B. 1\n" +
+                    "C. 2\n" +
+                    "D. The code does not compile.");
+            add("What does the following output?\n" +
+                    "String[] os = new String[] { \"Linux\", \"Mac\", \"Windows\" };\n" +
+                    "System.out.println(Arrays.binarySearch(os, \"Linux\"));\n" +
+                    "A. 0\n" +
+                    "B. 1\n" +
+                    "C. 2\n" +
+                    "D. The output is not defined.");
+            add("Which of the following statements are true?\n" +
+                    "I. You can always change a method signature from call(String[] arg) to\n" +
+                    "call(String... arg) without causing a compiler error in the calling code.\n" +
+                    "II. You can always change a method signature from call(String... arg) to\n" +
+                    "call(String[] arg) without causing a compiler error in the existing code.\n" +
+                    "A. I\n" +
+                    "B. II\n" +
+                    "C. Both I and II\n" +
+                    "D. Neither I nor II");
+            add("Which of these four array references can point to an array that is different from the\n" +
+                    "others?\n" +
+                    "A. int[][][][] nums1a, nums1b;\n" +
+                    "B. int[][][] nums2a[], nums2b;\n" +
+                    "C. int[][] nums3a[][], nums3b[][];\n" +
+                    "D. int[] nums4a[][][], numbs4b[][][];");
+            add("What is the output of the following when run as java unix.EchoFirst seed flower?\n" +
+                    "package unix;\n" +
+                    "import java.util.*;\n" +
+                    "public class EchoFirst {\n" +
+                    "   public static void main(String[] args) {\n" +
+                    "       Arrays.sort(args);\n" +
+                    "       String result = Arrays.binarySearch(args, args[0]);\n" +
+                    "       System.out.println(result);\n" +
+                    "   }\n" +
+                    "}\n" +
+                    "A. 0\n" +
+                    "B. 1\n" +
+                    "C. The code does not compile.\n" +
+                    "D. The code compiles but throws an exception at runtime.");
             add("");
             add("");
             add("");
