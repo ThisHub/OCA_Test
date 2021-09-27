@@ -46,9 +46,7 @@ public class Main {
                 go = scanner.nextLine();
 
                 if (go.toLowerCase(Locale.ROOT).equals("")||go.toLowerCase(Locale.ROOT).equals("c")) {
-                    System.out.println("infirst");
                     if (go.toLowerCase(Locale.ROOT).equals("")) {
-                        System.out.println("insecond");
                         go = "y";
                     }
                     if (go.equals("c")){
