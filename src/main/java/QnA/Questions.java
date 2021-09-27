@@ -1108,31 +1108,652 @@ public class Questions {
                     "B. 11\n" +
                     "C. 15\n" +
                     "D. The code does not compile.");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
+            add("What is the output of the following application?\n\n" +
+                    "package dessert;\n" +
+                    "public class IceCream {\n" +
+                    "   public final static void main(String... args) {\n" +
+                    "       int flavors = 30;\n" +
+                    "       int eaten = 0;\n" +
+                    "       switch(flavors) {\n" +
+                    "           case 30: eaten++;\n" +
+                    "           case 40: eaten+=2;\n" +
+                    "           default: eaten--;\n" +
+                    "       }\n" +
+                    "       System.out.print(eaten);\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. 1\n" +
+                    "B. 2\n" +
+                    "C. 3\n" +
+                    "D. The code does not compile.");
+            add("What is the output of the following application?\n\n" +
+                    "package mode;\n" +
+                    "public class Transportation {\n" +
+                    "   public static String travel(int distance) {\n" +
+                    "       return distance<1000 ? \"train\" : 10;\n" +
+                    "   }\n" +
+                    "   public static void main(String[] answer) {\n" +
+                    "       System.out.print(travel(500));\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. train\n" +
+                    "B. 10\n" +
+                    "C. The code does not compile.\n" +
+                    "D. The code compiles but throws an exception at runtime.");
+            add("Fill in the blanks: Given two non-null String objects with reference names\n" +
+                    "apples______________ and oranges, if apples oranges evaluates to true, then\n" +
+                    "apples______________ oranges must also evaluate to true.\n" +
+                    "A. ==, equals()\n" +
+                    "B. !=, equals()\n" +
+                    "C. equals(), ==\n" +
+                    "D. equals(), =!");
+            add("For a given non-null String myTestVariable, what is the resulting value of executing\n" +
+                    "the statement myTestVariable.equals(null)?\n" +
+                    "A. true\n" +
+                    "B. false\n" +
+                    "C. The statement does not compile.\n" +
+                    "D. The statement compiles but will produce an exception when used at runtime.");
+            add("How many 1s are outputted when the following application is compiled and run?\n" +
+                    "package city;\n" +
+                    "public class Road {\n" +
+                    "   public static void main(String... in) {\n" +
+                    "       int intersections = 100;\n" +
+                    "       int streets = 200;\n" +
+                    "       if (intersections < 150) {\n" +
+                    "           System.out.print(\"1\");\n" +
+                    "       } else if (streets && intersections > 1000) {\n" +
+                    "           System.out.print(\"2\");\n" +
+                    "       } if (streets < 500)\n" +
+                    "           System.out.print(\"1\");\n" +
+                    "       else\n" +
+                    "           System.out.print(\"2\");\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. None\n" +
+                    "B. One\n" +
+                    "C. Two\n" +
+                    "D. The code does not compile.");
+            add("Which statement about the logical operators & and && is true?\n" +
+                    "A. The & and && operators are interchangeable, always producing the same results at\n" +
+                    "runtime.\n" +
+                    "B. The & operator always evaluates both operands, while the && operator may only\n" +
+                    "evaluate the left operand.\n" +
+                    "C. Both expressions evaluate to true if either operand is true.\n" +
+                    "D. The & operator always evaluates both operands, while the && operator may only\n" +
+                    "evaluate the right operand.");
+            add("What is the output of the following code snippet?\n" +
+                    "int x = 10, y = 5;\n" +
+                    "boolean w = true, z = false;\n" +
+                    "x = w ? y++ : y--;\n" +
+                    "w = !z;\n" +
+                    "System.out.print((x+y)+\" \"+(w ? 5 : 10));\n" +
+                    "A. The code does not compile.\n" +
+                    "B. 10 10\n" +
+                    "C. 11 5\n" +
+                    "D. 12 5");
+            add("What is the output of the following application?\n\n" +
+                    "package bob;\n" +
+                    "public class AreYouBob {\n" +
+                    "   public static void main(String[] unused) {\n" +
+                    "       String bob = new String(\"bob\");\n" +
+                    "       String notBob = bob;\n" +
+                    "       System.out.print((bob==notBob)+\" \"+(bob.equals(notBob)));\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. true true\n" +
+                    "B. true false\n" +
+                    "C. false true\n" +
+                    "D. false false");
+            add("What is the value of 12 + 6 * 3 % (1 + 1) in Java?\n" +
+                    "A. 0\n" +
+                    "B. 12\n" +
+                    "C. 14\n" +
+                    "D. None of the above");
+            add("Given the following truth table, the boolean variables p and q, and the expression p ^\n" +
+                    "q, what are the missing values in the truth table, starting with the first column?\n" +
+                    "┌──────────┬─────────┬───────────┐\n" +
+                    "│          │ p = true│ p = false │\n" +
+                    "├──────────┼─────────┼───────────┤\n" +
+                    "│ q = true │ true    │ false     │\n" +
+                    "├──────────┼─────────┼───────────┤\n" +
+                    "│ q = false│ false   │ false     │\n" +
+                    "└──────────┴─────────┴───────────┘\n" +
+                    "A. false and true\n" +
+                    "B. false and false\n" +
+                    "C. true and true\n" +
+                    "D. true and false");
+            add("Which of the following is not a possible result of executing the following application?\n\n" +
+                    "public class ConditionallyLogical {\n" +
+                    "   public static void main(String... data) {\n" +
+                    "       if(data.length>=1\n" +
+                    "           && (data[0].equals(\"sound\") || data[0].equals (\"logic\"))\n" +
+                    "           && data.length<2) {\n" +
+                    "       System.out.print(data[0]);\n" +
+                    "       }\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. Nothing is printed.\n" +
+                    "B. sound is printed.\n" +
+                    "C. The application throws an exception at runtime.\n" +
+                    "D. logic is printed.");
+            add("Fill in the blanks: The operators +,______________ ,______________\n" +
+                    ",______________ , and ++ are listed in the same or increasing level of operator\n" +
+                    "precedence.\n" +
+                    "A. *, --, /\n" +
+                    "B. %, -, *\n" +
+                    "C. /, *, %\n" +
+                    "D. *, -, /");
+            add("What statement about the ^ operator is correct?\n" +
+                    "A. If one of the operands of ^ is true, then the result is always true.\n" +
+                    "B. There is a conditional form of the operator, denoted as ^^.\n" +
+                    "C. If both operands of ^ are true, the result is true.\n" +
+                    "D. The ^ operator can only be applied to boolean values.");
+            add(    "Given the following Venn diagram and the variables, x, y, and z, which Java expression\n" +
+                    "most closely represents the filled-in region of the diagram?\n" +
+                    "        , - ~ ~ ~ - ,          , - ~ ~ ~ - ,\n" +
+                    " X   , '               ' ,  , '             ',  Y\n" +
+                    "   ,                      ,,                  ,\n" +
+                    "  ,                      ,  ,                  ,\n" +
+                    " ,                     ,      ,                 ,\n" +
+                    " ,                     ,      ,                 ,\n" +
+                    " ,                 , - , ~ ~ ~, - ,             ,\n" +
+                    "  ,              ,'     ,    ,     ',           ,\n" +
+                    "   ,            ,        , ,         ,        ,\n" +
+                    "     ,         ,        , ' ,         ,       ,\n" +
+                    "       ' - , _,_ _ ,  '      ' - , _ _, _ ,  '\n" +
+                    "              ,                         , \n" +
+                    "              ,                         ,\n" +
+                    "              ,                         ,\n" +
+                    "                 ,                  , '\n" +
+                    "                   ' - , _ _ _ ,  '   Z\n\n" +
+                    "A. x || z\n" +
+                    "B. y || (y && z)\n" +
+                    "C. x || y\n" +
+                    "D. y && x ");
+            add("What variable type of red allows the following application to compile?\n" +
+                    "package tornado;\n" +
+                    "public class Kansas {\n" +
+                    "   public static void main(String[] args) {\n" +
+                    "       int colorOfRainbow = 10;\n" +
+                    "       ________ red = 5;\n" +
+                    "       switch(colorOfRainbow) {\n" +
+                    "       default:\n" +
+                    "           System.out.print(\"Home\");\n" +
+                    "           break;\n" +
+                    "       case red:\n" +
+                    "           System.out.print(\"Away\");\n" +
+                    "       }\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. long\n" +
+                    "B. double\n" +
+                    "C. int\n" +
+                    "D. None of the above");
+            add("Which two operators would be used to test if a number is equal to or greater than 5.21\n" +
+                    "but strictly less than 8.1?\n" +
+                    "A. > and <=\n" +
+                    "B. >= and >\n" +
+                    "C. < and >=\n" +
+                    "D. < and >");
+            add("What is the output of the following application?\n\n" +
+                    "package transporter;\n" +
+                    "public class TurtleVsHare {\n" +
+                    "   public static void main(String[] arguments) {\n" +
+                    "       int turtle = 10 * (2 + (3 + 2) / 5);\n" +
+                    "       int hare = turtle < 5 ? 10 : 25;\n" +
+                    "       System.out.print(turtle < hare ? \"Hare wins!\" : \"Turtle wins!\");\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. Hare wins!\n" +
+                    "B. Turtle wins!\n" +
+                    "C. The code does not compile.\n" +
+                    "D. The code compiles but throws a division by zero error at runtime.");
+            add("What is the output of the following application?\n\n" +
+                    "public class CountEntries {\n" +
+                    "   public static int getResult(int threshold) {\n" +
+                    "       return threshold > 5 ? 1 : 0;\n" +
+                    "   }\n" +
+                    "   public static final void main(String[] days) {\n" +
+                    "       System.out.print(getResult(5)+getResult(1)\n" +
+                    "          +getResult(0)+getResult(2)+\"\");\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. 0\n" +
+                    "B. 1\n" +
+                    "C. 0000\n" +
+                    "D. 1000");
+            add("What is the output of the following application?\n\n" +
+                    "package yoyo;\n" +
+                    "public class TestGame {\n" +
+                    "   public String runTest(boolean spinner, boolean roller) {\n" +
+                    "       if(spinner = roller) return \"up\";\n" +
+                    "       else return roller ? \"down\" : \"middle\";\n" +
+                    "   }\n" +
+                    "   public static final void main(String pieces[]) {\n" +
+                    "       final TestGame tester = new TestGame();\n" +
+                    "       System.out.println(tester.runTest(false,true));\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. up\n" +
+                    "B. middle\n" +
+                    "C. down\n" +
+                    "D. The code does not compile.");
+            add("Fill in the blanks: The______________ operator is true if either of the operands\n" +
+                    "are true, while the______________ operator flips a boolean value.\n" +
+                    "A. +, -\n" +
+                    "B. &&, !\n" +
+                    "C. |, -\n" +
+                    "D. ||, !");
+            add("Given the following code snippet, what is the value of movieRating after it is executed?\n" +
+                    "int characters = 5;\n" +
+                    "int story = 3;\n" +
+                    "double movieRating = characters <= 4 ? 3 : story>1 ? 2 : 1;\n" +
+                    "A. 2.0\n" +
+                    "B. 3.0\n" +
+                    "C. The code does not compile but would compile if parentheses were added.\n" +
+                    "D. None of the above");
+            add("Fill in the blanks: A switch statement can have______________ case statements\n" +
+                    "and______________ default statements.\n" +
+                    "A. at most one, at least one\n" +
+                    "B. any number of, at most one\n" +
+                    "C. at least one, any number of\n" +
+                    "D. at least one, at most one");
+            add("Which of the following is not a possible result of executing the following application?\n\n" +
+                    "public class OutsideLogic {\n" +
+                    "   public static void main(String... weather) {\n" +
+                    "       System.out.print(weather[0]!=null\n" +
+                    "           && weather[0].equals(\"sunny\")\n" +
+                    "           && !false\n" +
+                    "       ? \"Go Outside\" : \"Stay Inside\");\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. Nothing is printed.\n" +
+                    "B. The application throws an exception at runtime.\n" +
+                    "C. Go Outside is printed.\n" +
+                    "D. Stay Inside is printed.");
+            add("What is the value of (5 + (!2 + 8) * 3 - 3 % 2)/2 in Java?\n" +
+                    "A. 2\n" +
+                    "B. 11\n" +
+                    "C. 16\n" +
+                    "D. None of the above");
+            add("Given the following truth table, the boolean variables w and z, and the expression w ||\n" +
+                    "z, what are the missing values in the truth table, starting with the first row?\n" +
+                    "┌──────────┬─────────┬───────────┐\n" +
+                    "│          │ w = true│ w = false │\n" +
+                    "├──────────┼─────────┼───────────┤\n" +
+                    "│ z = true │ true    │ false     │\n" +
+                    "├──────────┼─────────┼───────────┤\n" +
+                    "│ z = false│ false   │ false     │\n" +
+                    "└──────────┴─────────┴───────────┘\n" +
+                    "A. false and false\n" +
+                    "B. true and false\n" +
+                    "C. true and true\n" +
+                    "D. false and true");
+            add("Fill in the blanks: The operators –,______________ ,______________\n" +
+                    ",______________ , and % are listed in the same or increasing level of operator\n" +
+                    "precedence.\n" +
+                    "A. +, /, *\n" +
+                    "B. --, -, *\n" +
+                    "C. ++, /, *\n" +
+                    "D. *, ++, %");
+            add("What is the output of the following application?\n\n" +
+                    "public class Baby {\n" +
+                    "   public static String play(int toy, int age) {\n" +
+                    "       final String game;\n" +
+                    "       if(toy<2)\n" +
+                    "           game = age > 1 ? 1 : 10; // p1\n" +
+                    "       else\n" +
+                    "           game = age > 3 ? \"Ball\" : \"Swim\"; // p2\n" +
+                    "       return game;\n" +
+                    "   }\n" +
+                    "   public static void main(String[] variables) {\n" +
+                    "       System.out.print(play(5,2));\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. Ball\n" +
+                    "B. Swim\n" +
+                    "C. The code does not compile due to p1.\n" +
+                    "D. The code does not compile due to p2.");
+            /* Chapter 4 */
+            add("What symbol is used for a varargs method parameter?\n" +
+                    "A. ..\n" +
+                    "B. ...\n" +
+                    "C. --\n" +
+                    "D. ---");
+            add("Fill in the blank in the following code to get the first element from the varargs\n" +
+                    "parameter.\n" +
+                    "   public void toss (Frisbee... f) {\n" +
+                    "Frisbee first = ____________;\n" +
+                    "}\n" +
+                    "A. f\n" +
+                    "B. f[0]\n" +
+                    "C. f[1]\n" +
+                    "D. None of the above");
+            add("Which of the following are primitives?\n" +
+                    "int[] lowercase = new int[0];\n" +
+                    "Integer[] uppercase = new Integer[0];\n" +
+                    "A. Only lowercase\n" +
+                    "B. Only uppercase\n" +
+                    "C. Bother lowercase and uppercase\n" +
+                    "D. Neither lowercase nor uppercase");
+            add("How many of the following are legal declarations?\n" +
+                    "[]double lion;\n" +
+                    "double[] tiger;\n" +
+                    "double bear[];\n" +
+                    "A. None\n" +
+                    "B. One\n" +
+                    "C. Two\n" +
+                    "D. Three");
+            add("Given the following two methods, which method call will not compile?\n" +
+                    "public void printStormName(String... names) {\n" +
+                    "   System.out.println(Arrays.toString(names));\n" +
+                    "}\n" +
+                    "public void printStormNames(String[] names) {\n" +
+                    "   System.out.println(Arrays.toString(names));\n" +
+                    "}\n" +
+                    "A. printStormName(\"Arlene\");\n" +
+                    "B. printStormName(new String[] { \"Bret\" });\n" +
+                    "C. printStormNames(\"Cindy\");\n" +
+                    "D. printStormNames(new String[] { \"Don\" });");
+            add("How do you determine the number of elements in an array?\n" +
+                    "A. buses.length\n" +
+                    "B. buses.length()\n" +
+                    "C. buses.size\n" +
+                    "D. buses.size()");
+            add("Which of the following create an empty two-dimensional array with dimensions 2×2?\n" +
+                    "A. int[][] blue = new int[2, 2];\n" +
+                    "B. int[][] blue = new int[2], [2];\n" +
+                    "C. int[][] blue = new int[2][2];\n" +
+                    "D. int[][] blue = new int[2 x 2];");
+            add("How many lines does the following code output?\n" +
+                    "String[] days = new String[] { \"Sunday\", \"Monday\", \"Tuesday\",\n" +
+                    "\"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\" };\n" +
+                    "for (int i = 0; i < days.length; i++)\n" +
+                    "System.out.println(days[i]);\n" +
+                    "A. Six\n" +
+                    "B. Seven\n" +
+                    "C. The code does not compile.\n" +
+                    "D. The code compiles but throws an exception at runtime.");
+            add("What are the names of the methods to do searching and sorting respectively on\n" +
+                    "arrays?\n" +
+                    "A. Arrays.binarySearch() and Arrays.linearSort()\n" +
+                    "B. Arrays.binarySearch() and Arrays.sort()\n" +
+                    "C. Arrays.search() and Arrays.linearSort()\n" +
+                    "D. Arrays.search() and Arrays.sort()");
+            add("What does this code output?\n" +
+                    "String[] nums = new String[] { \"1\", \"9\", \"10\" };\n" +
+                    "Arrays.sort(nums);\n" +
+                    "System.out.println(Arrays.toString(nums));\n" +
+                    "A. [1, 9, 10]\n" +
+                    "B. [1, 10, 9]\n" +
+                    "C. [10, 1, 9]\n" +
+                    "D. None of the above");
+            add("Which of the following references the first and last element in a non-empty array?\n" +
+                    "A. trains[0] and trains[trains.length]\n" +
+                    "B. trains[0] and trains[trains.length - 1]\n" +
+                    "C. trains[1] and trains[trains.length]\n" +
+                    "D. trains[1] and trains[trains.length - 1]");
+            add("How many of the following are legal declarations?\n" +
+                    "String lion [] = new String[] {\"lion\"};\n" +
+                    "String tiger [] = new String[1] {\"tiger\"};\n" +
+                    "String bear [] = new String[] {};\n" +
+                    "String ohMy [] = new String[0] {};\n" +
+                    "A. None\n" +
+                    "B. One\n" +
+                    "C. Two\n" +
+                    "D. Three");
+            add("How many of the following are legal declarations?\n" +
+                    "float[] lion = new float[];\n" +
+                    "float[] tiger = new float[1];\n" +
+                    "float[] bear = new[] float;\n" +
+                    "float[] ohMy = new[1] float;\n" +
+                    "A. None\n" +
+                    "B. One\n" +
+                    "C. Two\n" +
+                    "D. Three");
+            add("Which statement most accurately represents the relationship between searching and\n" +
+                    "sorting with respect to the Arrays class?\n" +
+                    "A. If the array is not sorted, calling Arrays.binarySearch() will be accurate, but\n" +
+                    "slower than if it were sorted.\n" +
+                    "B. The array does not need to be sorted before calling Arrays.binarySearch() to get\n" +
+                    "an accurate result.\n" +
+                    "C. The array must be sorted before calling Arrays.binarySearch() to get an accurate\n" +
+                    "result.\n" +
+                    "D. None of the above");
+            add("Which is not a true statement about an array?\n" +
+                    "A. An array expands automatically when it is full.\n" +
+                    "B. An array is allowed to contain duplicate values.\n" +
+                    "C. An array understands the concept of ordered elements.\n" +
+                    "D. An array uses a zero index to reference the first element.");
+            add("Which line of code causes an ArrayIndexOutOfBoundsException?\n" +
+                    "String[][] matrix = new String[1][2];\n" +
+                    "matrix[0][0] = \"Don't think you are, know you are.\";      // m1\n" +
+                    "matrix[0][1] = \"I'm trying to free your mind Neo\";        // m2\n" +
+                    "matrix[1][0] = \"Is all around you \";                      // m3\n" +
+                    "matrix[1][1] = \"Why oh why didn't I take the BLUE pill?\"; // m4\n" +
+                    "A. m1\n" +
+                    "B. m2\n" +
+                    "C. m3\n" +
+                    "D. m4");
+            add("What does the following output?\n" +
+                    "String[] os = new String[] { \"Mac\", \"Linux\", \"Windows\" };\n" +
+                    "Arrays.sort(os);\n" +
+                    "System.out.println(Arrays.binarySearch(os, \"Mac\"));\n" +
+                    "A. 0\n" +
+                    "B. 1\n" +
+                    "C. 2\n" +
+                    "D. The output is not defined.");
+            add("Which is the first line to prevent this code from compiling and running without error?\n" +
+                    "char[][] ticTacToe = new char[3,3]; // r1\n" +
+                    "ticTacToe[1][3] = 'X'; // r2\n" +
+                    "ticTacToe[2][2] = 'X';\n" +
+                    "ticTacToe[3][1] = 'X';\n" +
+                    "System.out.println(ticTacToe.length + \" in a row!\"); // r3\n" +
+                    "A. Line r1\n" +
+                    "B. Line r2\n" +
+                    "C. Line r3\n" +
+                    "D. None of the above");
+            add("How many objects are created when running the following code?\n" +
+                    "Integer[] lotto = new Integer[4];\n" +
+                    "lotto[0] = new Integer(1_000_000);\n" +
+                    "lotto[1] = new Integer(999_999);\n" +
+                    "A. Two\n" +
+                    "B. Three\n" +
+                    "C. Four\n" +
+                    "D. Five");
+            add("How many of the following are legal declarations?\n" +
+                    "[][] String alpha;\n" +
+                    "[] String beta;\n" +
+                    "String[][] gamma;\n" +
+                    "String[] delta[];\n" +
+                    "String epsilon[][];\n" +
+                    "A. Two\n" +
+                    "B. Three\n" +
+                    "C. Four\n" +
+                    "D. Five");
+            add("Which of the options in the graphic best represent the blocks variable?\n" +
+                    "char[][] blocks = new char[][] { { 'a', 'b', 'c' }, { 'd' }, { 'e', 'f' } };\n" +
+                    "A. \n\n" +
+                    "blocks\n" +
+                    "  │        ┌────┬─────┬────┐\n" +
+                    "  └─────►  │'a' │ 'd' │ 'e'│\n" +
+                    "           ├────┼─────┼────┤\n" +
+                    "           │'b' │     │ 'f'│\n" +
+                    "           ├────┼─────┼────┤\n" +
+                    "           │'c' │     │    │\n" +
+                    "           └────┴─────┴────┘\n" +
+                    "B. \n" +
+                    "blocks\n" +
+                    "  │      ┌──────┬───────┬──────┐\n" +
+                    "  └─────►│      │       │      │\n" +
+                    "         └──┬───┴───┬───┴────┬─┘\n" +
+                    "            │       │        │\n" +
+                    "            ▼       ▼        ▼\n" +
+                    "          ┌───┐   ┌───┐    ┌───┐\n" +
+                    "          │'a'│   │'d'│    │'e'│\n" +
+                    "          ├───┤   └───┘    ├───┤\n" +
+                    "          │'b'│            │'f'│\n" +
+                    "          ├───┤            └───┘\n" +
+                    "          │'c'│\n" +
+                    "          └───┘\n" +
+                    "C. \n" +
+                    "blocks\n" +
+                    "  │        ┌────┬─────┬────┐\n" +
+                    "  └─────►  │'a' │ 'b' │ 'c'│\n" +
+                    "           ├────┼─────┼────┤\n" +
+                    "           │'d' │     │    │\n" +
+                    "           ├────┼─────┼────┤\n" +
+                    "           │'e' │ 'f' │ 'g'│\n" +
+                    "           └────┴─────┴────┘\n" +
+                    "D. \n" +
+                    "blocks\n" +
+                    "  │      ┌──────┬───────┬──────┐\n" +
+                    "  └─────►│      │       │      │\n" +
+                    "         └──┬───┴───┬───┴────┬─┘\n" +
+                    "            │       │        │\n" +
+                    "            ▼       ▼        ▼\n" +
+                    "          ┌───┐   ┌───┐    ┌───┐\n" +
+                    "          │'a'│   │'b'│    │'c'│\n" +
+                    "          ├───┤   ├───┤    ├───┤\n" +
+                    "          │'d'│   │   │    │   │\n" +
+                    "          ├───┤   ├───┤    ├───┤\n" +
+                    "          │'e'│   │'f'│    │   │\n" +
+                    "          └───┘   └───┘    └───┘");
+            add("What happens when calling the following method with a non-null and non-empty\n" +
+                    "array?\n" +
+                    "public static void addStationName(String[] names) {\n" +
+                    "   names[names.length] = \"Times Square\";\n" +
+                    "}\n" +
+                    "A. It adds an element to the array the value of which is Times Square.\n" +
+                    "B. It replaces the last element in the array with the value Times Square.\n" +
+                    "C. It does not compile.\n" +
+                    "D. It throws an exception.");
+            add("How many lines does the following code output?\n" +
+                    "String[] days = new String[] { \"Sunday\", \"Monday\", \"Tuesday\",\n" +
+                    "       \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\" };\n" +
+                    "for (int i = 0; i < days.size(); i++)\n" +
+                    "   System.out.println(days[i]);\n" +
+                    "A. Six\n" +
+                    "B. Seven\n" +
+                    "C. The code does not compile.\n" +
+                    "D. The code compiles but throws an exception at runtime.");
+            add("How many dimensions does the array reference moreBools allow?\n" +
+                    "boolean[][][] bools, moreBools;\n" +
+                    "A. One dimension\n" +
+                    "B. Two dimensions\n" +
+                    "C. Three dimensions\n" +
+                    "D. None of the above");
+            add("What is a possible output of the following code?\n" +
+                    "String[] strings = new String[2];\n" +
+                    "System.out.println(strings);\n" +
+                    "A. [null, null]\n" +
+                    "B. [,]\n" +
+                    "C. [Ljava.lang.String;@74a14482\n" +
+                    "D. None of the above");
+            add("Which is the first line to prevent this code from compiling and running without error?\n" +
+                    "char[][] ticTacToe = new char[3][3]; // r1\n" +
+                    "ticTacToe[1][3] = 'X'; // r2\n" +
+                    "ticTacToe[2][2] = 'X';\n" +
+                    "ticTacToe[3][1] = 'X';\n" +
+                    "System.out.println(ticTacToe.length + \" in a row!\"); // r3\n" +
+                    "A. Line r1\n" +
+                    "B. Line r2\n" +
+                    "C. Line r3\n" +
+                    "D. None of the above");
+            add("What is the result of running the following as java Copier?\n" +
+                    "package duplicate;\n" +
+                    "public class Copier {\n" +
+                    "   public static void main(String... original) {\n" +
+                    "       String... copy = original;\n" +
+                    "       System.out.println(copy.length + \" \" + copy[0]);\n" +
+                    "   }\n" +
+                    "}\n" +
+                    "A. 0\n" +
+                    "B. 0 followed by an exception\n" +
+                    "C. 1 followed by an exception\n" +
+                    "D. The code does not compile.");
+            add("What is the result of running the following program?\n" +
+                    "1: package fun;\n" +
+                    "2: public class Sudoku {\n" +
+                    "3:     static int[][] game = new int[6][6];\n" +
+                    "4:\n" +
+                    "5:     public static void main(String[] args) {\n" +
+                    "6:         game[3][3] = 6;\n" +
+                    "7:         Object[] obj = game;\n" +
+                    "8:         obj[3] = \"X\";\n" +
+                    "9:         System.out.println(game[3][3]);\n" +
+                    "10:    }\n" +
+                    "11: }\n" +
+                    "A. X\n" +
+                    "B. The code does not compile.\n" +
+                    "C. The code compiles but throws a NullPointerException at runtime.\n" +
+                    "D. The code compiles but throws a different exception at runtime.");
+            add("What does the following output?\n" +
+                    "String[] os = new String[] { \"Mac\", \"Linux\", \"Windows\" };\n" +
+                    "Arrays.sort(os);\n" +
+                    "System.out.println(Arrays.binarySearch(os, \"RedHat\"));\n" +
+                    "A. -1\n" +
+                    "B. -2\n" +
+                    "C. -3\n" +
+                    "D. The output is not defined.");
+            add("What is the output of the following when run as java FirstName Wolfie?\n" +
+                    "public class FirstName {\n" +
+                    "   public static void main(String... names) {\n" +
+                    "       System.out.println(names[0]);\n" +
+                    "   }\n" +
+                    "}\n" +
+                    "A. FirstName\n" +
+                    "B. Wolfie\n" +
+                    "C. The code throws an ArrayIndexOutOfBoundsException.\n" +
+                    "D. The code throws a NullPointerException.");
+            add("What is the output of the following when run as java Count 1 2?\n" +
+                    "public class Count {\n" +
+                    "   public static void main(String target[]) {\n" +
+                    "       System.out.println(target.length);\n" +
+                    "   }\n" +
+                    "}\n" +
+                    "A. 0\n" +
+                    "B. 1\n" +
+                    "C. 2\n" +
+                    "D. The code does not compile.");
+            add("What is the output of the following when run as java unix.EchoFirst seed flower?\n" +
+                    "package unix;\n" +
+                    "import java.util.*;\n" +
+                    "public class EchoFirst {\n" +
+                    "   public static void main(String[] args) {\n" +
+                    "       String one = args[0];\n" +
+                    "       Arrays.sort(args);\n" +
+                    "       int result = Arrays.binarySearch(args, one);\n" +
+                    "       System.out.println(result);\n" +
+                    "   }\n" +
+                    "}\n" +
+                    "A. 0\n" +
+                    "B. 1\n" +
+                    "C. The code does not compile.\n" +
+                    "D. The code compiles but throws an exception at runtime.");
+            add("Which of these four array declarations produces a different array than the others?\n" +
+                    "A. int[][] nums = new int[2][1];\n" +
+                    "B. int[] nums[] = new int[2][1];\n" +
+                    "C. int[] nums[] = new int[][] { { 0 }, { 0 } };\n" +
+                    "D. int[] nums[] = new int[][] { { 0, 0 } };");
+            add("How do you access the array element with the value of \"z\"?\n" +
+                    "dimensions\n" +
+                    "  │      ┌──────┬───────┬───────┐\n" +
+                    "  └─────►│ \"one\"│ \"two\" │\"three\"│\n" +
+                    "         └──┬───┴───┬───┴────┬──┘\n" +
+                    "            │       │        │\n" +
+                    "            ▼       ▼        ▼\n" +
+                    "          ┌───┐   ┌───┐    ┌───┐\n" +
+                    "          │\"p\"│   │\"x\"│    │\"x\"│\n" +
+                    "          └───┘   ├───┤    ├───┤\n" +
+                    "                  │\"y\"│    │\"y\"│\n" +
+                    "                  └───┘    ├───┤\n" +
+                    "                           │\"z\"│\n" +
+                    "                           └───┘\n" +
+                    "A. dimensions[\"three\"][2]\n" +
+                    "B. dimensions[\"three\"][3]\n" +
+                    "C. dimensions[2][2]\n" +
+                    "D. dimensions[3][3]");
             add("");
             add("");
             add("");
