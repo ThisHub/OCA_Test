@@ -622,32 +622,287 @@ public class Questions {
                     "B. 4-4\n" +
                     "C. The code does not compile.\n" +
                     "D. The code compiles but throws an exception at runtime.");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
-            add("");
+            add("Given the following code, fill in the blank to have the code print bounce.\n\n" +
+                    "public class TennisBall {\n" +
+                    "   public TennisBall() {\n" +
+                    "       System.out.println(\"bounce\");\n" +
+                    "   }\n" +
+                    "   public static void main(String[] slam) {\n" +
+                    "       _____________________\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. TennisBall;\n" +
+                    "B. TennisBall();\n" +
+                    "C. new TennisBall;\n" +
+                    "D. new TennisBall();");
+            add("Which of the following correctly assigns animal to both variables?\n\n" +
+                    "I. String cat = \"animal\", dog = \"animal\";\n" +
+                    "II. String cat = \"animal\"; dog = \"animal\";\n" +
+                    "III. String cat, dog = \"animal\";\n" +
+                    "IV. String cat, String dog = \"animal\";\n\n" +
+                    "A. I\n" +
+                    "B. I, II\n" +
+                    "C. I, III\n" +
+                    "D. I, II, III, IV");
+            add("Which two primitives have wrapper classes that are not merely the name of the\n" +
+                    "primitive with an uppercase letter?\n" +
+                    "A. byte and char\n" +
+                    "B. byte and int\n" +
+                    "C. char and int\n" +
+                    "D. None of the above");
+            add("Which of the following is true about String instance variables?\n" +
+                    "A. They can be set to null.\n" +
+                    "B. They can never be set from outside the class they are defined in.\n" +
+                    "C. They can only be set in the constructor.\n" +
+                    "D. They can only be set once per run of the program.");
+            add("Which statement is true about primitives?\n" +
+                    "A. Primitive types begin with a lowercase letter.\n" +
+                    "B. Primitive types can be set to null.\n" +
+                    "C. String is a primitive.\n" +
+                    "D. You can create your own primitive types.");
+            add("How do you force garbage collection to occur at a certain point?\n" +
+                    "A. Call System.forceGc()\n" +
+                    "B. Call System.gc()\n" +
+                    "C. Call System.requireGc()\n" +
+                    "D. None of the above");
+            add("How many of the String objects are eligible for garbage collection right before the end\n" +
+                    "of the main method?\n\n" +
+                    "public static void main(String[] fruits) {\n" +
+                    "   String fruit1 = new String(\"apple\");\n" +
+                    "   String fruit2 = new String(\"orange\");\n" +
+                    "   String fruit3 = new String(\"pear\");\n" +
+                    "   fruit3 = fruit1;\n" +
+                    "   fruit2 = fruit3;\n" +
+                    "   fruit1 = fruit2;\n" +
+                    "}\n\n" +
+                    "A. None\n" +
+                    "B. One\n" +
+                    "C. Two\n" +
+                    "D. Three");
+            add("Which of the following can fill in the blanks to make this code compile?\n" +
+                    "_______d = new_______ (1_000_000.00);\n" +
+                    "A. double, double\n" +
+                    "B. double, Double\n" +
+                    "C. Double, double\n" +
+                    "D. None of the above");
+            add("What does the following output?\n\n" +
+                    "1: public class InitOrder {\n" +
+                    "2:     public String first = \"instance\";\n" +
+                    "3:     public InitOrder() {\n" +
+                    "4:         first = \"constructor\";\n" +
+                    "5:     }\n" +
+                    "6:     { first = \"block\"; }\n" +
+                    "7:     public void print() {\n" +
+                    "8:         System.out.println(first);\n" +
+                    "9:     }\n" +
+                    "10:    public static void main(String... args) {\n" +
+                    "11:        new InitOrder().print();\n" +
+                    "12:    }\n" +
+                    "13: }\n\n" +
+                    "A. block\n" +
+                    "B. constructor\n" +
+                    "C. instance\n" +
+                    "D. The code does not compile.");
+            add("How many of the following lines compile?\n" +
+                    "int i = null;\n" +
+                    "Integer in = null;\n" +
+                    "String s = null;\n" +
+                    "A. None\n" +
+                    "B. One\n" +
+                    "C. Two\n" +
+                    "D. Three");
+            add("Which pairs of statements can accurately fill in the blanks in this table?\n" +
+                    "┌──────────────┬────────────────────────────────────────────────────────┐\n" +
+                    "│Variable Type │Can be called within the class from what type of method │\n" +
+                    "├──────────────┼────────────────────────────────────────────────────────┤\n" +
+                    "│Instance      │Blank 1:_________                                       │\n" +
+                    "├──────────────┼────────────────────────────────────────────────────────┼\n" +
+                    "│Static        │Blank 2:_________                                       │\n" +
+                    "└──────────────┴────────────────────────────────────────────────────────┘\n\n" +
+                    "A. Blank 1: an instance method only, Blank 2: a static method only\n" +
+                    "B. Blank 1: an instance or static method, Blank 2: a static method only\n" +
+                    "C. Blank 1: an instance method only, Blank 2: an instance or static method\n" +
+                    "D. Blank 1: an instance or static method, Blank 2: an instance or static method");
+            add("Which of the following does not compile?\n" +
+                    "A. double num = 2.718;\n" +
+                    "B. double num = 2._718;\n" +
+                    "C. double num = 2.7_1_8;\n" +
+                    "D. None of the above; they all compile.");
+            add("Which of the following lists of primitive numeric types is presented in order from\n" +
+                    "smallest to largest data type?\n" +
+                    "A. byte, short, int, long\n" +
+                    "B. int, short, byte, long\n" +
+                    "C. short, byte, int, long\n" +
+                    "D. short, int, byte, long");
+            add("Fill in the blank to make the code compile:\n\n" +
+                    "package animal;\n" +
+                    "public class Cat {\n" +
+                    "   public String name;\n" +
+                    "   public static void main(String[] meow) {\n" +
+                    "       Cat cat = new Cat();\n" +
+                    "       ______________ = \"Sadie\";\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. cat.name\n" +
+                    "B. cat-name\n" +
+                    "C. cat.setName\n" +
+                    "D. cat[name]");
+            add("Which of the following is the output of this code, assuming it runs to completion?\n\n" +
+                    "package store;\n" +
+                    "public class Toy {\n" +
+                    "   public void play() {\n" +
+                    "       System.out.print(\"play-\");\n" +
+                    "   }\n" +
+                    "   public void finalizer() {\n" +
+                    "       System.out.print(\"clean-\");\n" +
+                    "   }\n" +
+                    "   public static void main(String[] fun) {\n" +
+                    "       Toy car = new Toy();\n" +
+                    "       car.play();\n" +
+                    "       System.gc();\n" +
+                    "       Toy doll = new Toy();\n" +
+                    "       doll.play();\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. play-\n" +
+                    "B. play-play-\n" +
+                    "C. play-clean-play-\n" +
+                    "D. play-play-clean-clean-");
+            add("Which is the most common way to fill in the blank to implement this method?\n\n" +
+                    "public class Penguin {\n" +
+                    "   private double beakLength;\n" +
+                    "       public static void setBeakLength(Penguin p, int b) {\n" +
+                    "       _____________________________\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. p.beakLength = b;\n" +
+                    "B. p['beakLength'] = b;\n" +
+                    "C. p[beakLength] = b;\n" +
+                    "D. None of the above");
+            add("Fill in the blanks to indicate whether a primitive or wrapper class can be assigned\n" +
+                    "without the compiler using the autoboxing feature.\n" +
+                    "_______first = Integer.parseInt(\"5\");\n" +
+                    "_______second = Integer.valueOf(\"5\");\n" +
+                    "A. int, int\n" +
+                    "B. int, Integer\n" +
+                    "C. Integer, int\n" +
+                    "D. Integer, Integer");
+            add("How many objects are eligible for garbage collection right before the end of the main method?\n\n" +
+                    "1: public class Person {\n" +
+                    "2:     public Person youngestChild;\n" +
+                    "3:\n" +
+                    "4:     public static void main(String... args) {\n" +
+                    "5:         Person elena = new Person();\n" +
+                    "6:         Person diana = new Person();\n" +
+                    "7:         elena.youngestChild = diana;\n" +
+                    "8:         diana = null;\n" +
+                    "9:         Person zoe = new Person();\n" +
+                    "10:        elena.youngestChild = zoe;\n" +
+                    "11:        zoe = null;\n" +
+                    "12:    }\n" +
+                    "13: }\n\n" +
+                    "A. None\n" +
+                    "B. One\n" +
+                    "C. Two\n" +
+                    "D. Three");
+            add("Which is a valid constructor for this class?\n\n" +
+                    "public class TennisBall {\n" +
+                    "}\n\n" +
+                    "A. public TennisBall static create() { return new TennisBall(); }\n" +
+                    "B. public TennisBall static newInstance() { return new TennisBall():}\n" +
+                    "C. public TennisBall() {}\n" +
+                    "D. public void TennisBall() {}");
+            add("Which of the following is not a possible output of this code, assuming it runs to\n" +
+                    "completion?\n\n" +
+                    "package store;\n" +
+                    "public class Toy {\n" +
+                    "   public void play() {\n" +
+                    "       System.out.print(\"play-\");\n" +
+                    "   }\n" +
+                    "   public void finalize() {\n" +
+                    "       System.out.print(\"clean-\");\n" +
+                    "   }\n" +
+                    "   public static void main(String[] args) {\n" +
+                    "       Toy car = new Toy();\n" +
+                    "       car.play();\n" +
+                    "       System.gc();\n" +
+                    "       Toy doll = new Toy();\n" +
+                    "       doll.play();\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. play-\n" +
+                    "B. play-play-\n" +
+                    "C. play-play-clean-\n" +
+                    "D. play-play-clean-clean-");
+            add("Which converts a primitive to a wrapper class object without using autoboxing?\n" +
+                    "A. Call the asObject() method\n" +
+                    "B. Call the constructor of the wrapper class\n" +
+                    "C. Call the convertToObject() method\n" +
+                    "D. Call the toObject() method");
+            add("What is the output of the following?\n\n" +
+                    "package beach;\n" +
+                    "public class Sand {\n" +
+                    "   public Sand() {\n" +
+                    "       System.out.print(\"a\");\n" +
+                    "   }\n" +
+                    "   public void Sand() {\n" +
+                    "       System.out.print(\"b\");\n" +
+                    "   }\n" +
+                    "   public void run() {\n" +
+                    "       new Sand();\n" +
+                    "       Sand();\n" +
+                    "   }\n" +
+                    "   public static void main(String... args) {\n" +
+                    "       new Sand().run();\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. a\n" +
+                    "B. ab\n" +
+                    "C. aab\n" +
+                    "D. None of the above");
+            /* Chapter 3 */
+            add("Which of the following variable types is not permitted in a switch statement?\n" +
+                    "A. String\n" +
+                    "B. double\n" +
+                    "C. int\n" +
+                    "D. char");
+            add("What is the value of tip after executing the following code snippet?\n" +
+                    "int meal = 5;\n" +
+                    "int tip = 2;\n" +
+                    "int total = meal + (meal>6 ? ++tip : tip);\n" +
+                    "A. 1\n" +
+                    "B. 2\n" +
+                    "C. 3\n" +
+                    "D. 6");
+            add("What is the output of the following application?\n\n" +
+                    "package registration;\n" +
+                    "public class NameCheck {\n" +
+                    "   public static void main(String... data) {\n" +
+                    "       String john = \"john\";\n" +
+                    "       String jon = new String(john);\n" +
+                    "       System.out.print((john==jon)+\" \"+(john.equals(jon)));\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. true true\n" +
+                    "B. true false\n" +
+                    "C. false true\n" +
+                    "D. false false");
+            add("What is the output of the following application?\n\n" +
+                    "package planning;\n" +
+                    "public class ThePlan {\n" +
+                    "   public static void main(String[] input) {\n" +
+                    "       int plan = 1;\n" +
+                    "       plan = plan++ + --plan;\n" +
+                    "       if(plan==1) {\n" +
+                    "           System.out.print(\"Plan A\");\n" +
+                    "       } else { if(plan==2) System.out.print(\"Plan B\");\n" +
+                    "       } else System.out.print(\"Plan C\");\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. Plan A\n" +
+                    "B. Plan B\n" +
+                    "C. Plan C\n" +
+                    "D. None of the above");
             add("");
             add("");
             add("");
