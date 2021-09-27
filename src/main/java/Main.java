@@ -35,7 +35,6 @@ public class Main {
             System.out.println(questions.questions.get(questionNo));
             System.out.print("Your answer: ");
             String answer = scanner.next();
-            System.out.println(answer);
             if (answer.toLowerCase(Locale.ROOT).equals(answers.answers.get(questionNo).toLowerCase(Locale.ROOT))){
                 System.out.println("Correct!, here is why: " + explanation.explanations.get(questionNo));
             }
@@ -43,10 +42,18 @@ public class Main {
                 System.out.println("Incorrect. Better luck next time here is the explanation: \n" + explanation.explanations.get(questionNo));
             System.out.println("Press enter to continue, press C to stop");
             while (!go.toLowerCase(Locale.ROOT).equals("")||!go.toLowerCase(Locale.ROOT).equals("c")){
-                go = scanner.next();
-                if (go.toLowerCase(Locale.ROOT).equals("")||go.toLowerCase(Locale.ROOT).equals("n")) {
-                    if (go.toLowerCase(Locale.ROOT).equals(""))
+                scanner.nextLine();
+                go = scanner.nextLine();
+
+                if (go.toLowerCase(Locale.ROOT).equals("")||go.toLowerCase(Locale.ROOT).equals("c")) {
+                    System.out.println("infirst");
+                    if (go.toLowerCase(Locale.ROOT).equals("")) {
+                        System.out.println("insecond");
                         go = "y";
+                    }
+                    if (go.equals("c")){
+                        go = "n";
+                    }
                     break;
                 }
                 else
