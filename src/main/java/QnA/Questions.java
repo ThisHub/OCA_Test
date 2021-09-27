@@ -330,7 +330,7 @@ public class Questions {
                     "C. It does not compile.\n" +
                     "D. It compiles but throws an error at runtime.");
             add("Given the following class diagram, which Java implementation most closely matches\n" +
-                    "this structure?" +
+                    "this structure?\n" +
                     "   ┌──────────────────┐\n" +
                     "   │      Book        │\n" +
                     "   ├──────────────────┤\n" +
@@ -903,6 +903,262 @@ public class Questions {
                     "B. Plan B\n" +
                     "C. Plan C\n" +
                     "D. None of the above");
+            add("Which of the following statements about a default branch in a switch statement is\n" +
+                    "correct?\n" +
+                    "A. All switch statements must include a default statement.\n" +
+                    "B. The default statement is required to be placed after all case statements.\n" +
+                    "C. Unlike a case statement, the default statement does not take a value.\n" +
+                    "D. A default statement can only be used when at least one case statement is present.");
+            add("What is the value of thatNumber after the execution of the following code snippet?\n\n" +
+                    "long thatNumber = 5 >= 5 ? 1+2 : 1*1;\n" +
+                    "if(++thatNumber < 4)\n" +
+                    "   thatNumber += 1;\n\n" +
+                    "A. 3\n" +
+                    "B. 4\n" +
+                    "C. 5\n" +
+                    "D. The answer cannot be determined until runtime.");
+            add("Which statement immediately exits a switch statement, skipping all remaining case or\n" +
+                    "default branches?\n" +
+                    "A. exit\n" +
+                    "B. break\n" +
+                    "C. goto\n" +
+                    "D. continue");
+            add("Which statement about ternary expressions is true?\n" +
+                    "A. In some cases, both expressions to the right of the conditional operator in a ternary\n" +
+                    "expression will be evaluated at runtime.\n" +
+                    "B. Ternary expressions require parentheses for proper evaluation.\n" +
+                    "C. The ternary expressions are a convenient replacement for an if-then-else\n" +
+                    "statement.\n" +
+                    "D. Ternary expressions support int and boolean expressions for the left-most\n" +
+                    "operand.");
+            add("What is the output of the following application?\n" +
+                    "package voting;\n\n" +
+                    "1: public class Election {\n" +
+                    "2:     public void calculateResult(Integer candidateA, Integer candidateB) {\n" +
+                    "3:         boolean process = candidateA == null || candidateA.intValue() < 10;\n" +
+                    "4:         boolean value = candidateA && candidateB;\n" +
+                    "5:         System.out.print(process || value);\n" +
+                    "6:     }\n" +
+                    "7:     public static void main(String[] unused) {\n" +
+                    "8:         new Election().calculateResult(null,203);\n" +
+                    "9:     }\n" +
+                    "10: }\n\n" +
+                    "A. true\n" +
+                    "B. false\n" +
+                    "C. The code does not compile.\n" +
+                    "D. The code compiles but throws a NullPointerException on line 3 at runtime.");
+            add("What is the output of the following application?\n\n" +
+                    "package dinosaur;\n" +
+                    "public class Park {\n" +
+                    "   public final static void main(String... arguments) {\n" +
+                    "       int pterodactyl = 6;\n" +
+                    "       long triceratops = 3;\n" +
+                    "       if(pterodactyl % 3 >= 1)\n" +
+                    "           triceratops++;\n" +
+                    "           triceratops--;\n" +
+                    "       System.out.print(triceratops);\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. 2\n" +
+                    "B. 3\n" +
+                    "C. 4\n" +
+                    "D. The code does not compile.");
+            add("Which statement about if-then statements is true?\n" +
+                    "A. An if-then statement is required to have an else statement.\n" +
+                    "B. If the boolean test of an if-then statement evaluates to false, then the target clause\n" +
+                    "   of the if-then statement will still be evaluated.\n" +
+                    "C. An if-then statement is required to cast an object.\n" +
+                    "D. An if-then statement can execute a single statement or a block {}.");
+            add("What is the output of the following application?\n\n" +
+                    "package restaurant;\n" +
+                    "public class Pieces {\n" +
+                    "   public static void main(String[] info) {\n" +
+                    "       int flair = 15;\n" +
+                    "       if(flair >= 15 && flair < 37) {\n" +
+                    "           System.out.print(\"Not enough\");\n" +
+                    "       } if(flair==37) {\n" +
+                    "           System.out.print(\"Just right\");\n" +
+                    "       } else {\n" +
+                    "           System.out.print(\"Too many\");\n" +
+                    "       }\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. Not enough\n" +
+                    "B. Just right\n" +
+                    "C. Too many\n" +
+                    "D. None of the above");
+            add("Which statement about case statements of a switch statement is not true?\n" +
+                    "A. A case value can be final.\n" +
+                    "B. A case statement must be terminated with a break statement.\n" +
+                    "C. A case value can be a literal expression.\n" +
+                    "D. A case value must match the data type of the switch variable, or be able to be\n" +
+                    "promoted to that type.");
+            add("Given the following truth table, which operator for the boolean expressions x and y\n" +
+                    "corresponds to this relationship?\n" +
+                    "┌──────────┬─────────┬───────────┐\n" +
+                    "│          │ x = true│ x = false │\n" +
+                    "├──────────┼─────────┼───────────┤\n" +
+                    "│ y = true │ true    │ false     │\n" +
+                    "├──────────┼─────────┼───────────┤\n" +
+                    "│ y = false│ false   │ false     │\n" +
+                    "└──────────┴─────────┴───────────┘\n\n" +
+                    "A. --\n" +
+                    "B. ++\n" +
+                    "C. ||\n" +
+                    "D. &&");
+            add("What is the output of the following code snippet?\n\n" +
+                    "int hops = 0;\n" +
+                    "int jumps = 0;\n" +
+                    "jumps = hops++;\n" +
+                    "if(jumps)\n" +
+                    "   System.out.print(\"Jump!\");\n" +
+                    "else\n" +
+                    "   System.out.print(\"Hop!\");\n\n" +
+                    "A. Jump!\n" +
+                    "B. Hop!\n" +
+                    "C. The code does not compile.\n" +
+                    "D. The code compiles but throws an exception at runtime.");
+            add("Fill in the blanks: The _____________ operator increases the value of a variable by\n" +
+                    "1 and returns the new value, while the _____________ operator decreases the\n" +
+                    "value of a variable by 1 and returns the original value.\n" +
+                    "A. pre-increment [++v], pre-decrement [--v]\n" +
+                    "B. pre-increment [++v], post-decrement [v--]\n" +
+                    "C. post-increment [v++], pre-decrement [--v]\n" +
+                    "D. post-increment [v++], post-decrement [v--]");
+            add("What is the output of the following application?\n" +
+                    "package jungle;\n\n" +
+                    "public class TheBigRace {\n" +
+                    "   public static void main(String[] in) {\n" +
+                    "       int tiger = 2;\n" +
+                    "       short lion = 3;\n" +
+                    "       long winner = lion+2*(tiger + lion);\n" +
+                    "       System.out.print(winner);\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. 11\n" +
+                    "B. 13\n" +
+                    "C. 25\n" +
+                    "D. None of the above");
+            add("Given the following code snippet, assuming dayOfWeek is an int, what variable type of\n\n" +
+                    "saturday is not permitted?\n" +
+                    "final _________ saturday = 6;\n" +
+                    "switch(dayOfWeek) {\n" +
+                    "   default:\n" +
+                    "       System.out.print(\"Another Weekday\");\n" +
+                    "       break;\n" +
+                    "   case saturday:\n" +
+                    "       System.out.print(\"Weekend!\");\n" +
+                    "}\n\n" +
+                    "A. byte\n" +
+                    "B. long\n" +
+                    "C. int\n" +
+                    "D. None of the above");
+            add("Given the following code snippet, what is the value of dinner after it is executed?\n" +
+                    "int time = 11;\n" +
+                    "int day = 4;\n" +
+                    "String dinner = time > 10 ? day ? \"Takeout\" : \"Salad\" : \"Leftovers\";\n" +
+                    "A. Takeout\n" +
+                    "B. Salad\n" +
+                    "C. The code does not compile but would compile if parentheses were added.\n" +
+                    "D. None of the above");
+            add("What is the output of the following application?\n\n" +
+                    "package recreation;\n" +
+                    "public class Dancing {\n" +
+                    "   public static void main(String[] vars) {\n" +
+                    "       int leaders = 10 * (2 + (1 + 2 / 5);\n" +
+                    "       int followers = leaders * 2;\n" +
+                    "       System.out.print(leaders + followers < 10 ? \"Too few\" : \"Too many\");\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. Too few\n" +
+                    "B. Too many\n" +
+                    "C. The code does not compile.\n" +
+                    "D. The code compiles but throws a division by zero error at runtime.");
+            add("What is the output of the following application?\n\n" +
+                    "package schedule;\n" +
+                    "public class PrintWeek {\n" +
+                    "   public static final void main(String[] days) {\n" +
+                    "       System.out.print(5 + 6 + \"7\" + 8 + 9);\n" +
+                    "   }\n" +
+                    "}\n" +
+                    "A. 56789\n" +
+                    "B. 11789\n" +
+                    "C. 11717\n" +
+                    "D. The code does not compile.");
+            add("Fill in the blanks: The______________ operator is used to find the difference\n" +
+                    "between two numbers, while the______________ operator is used to find the\n" +
+                    "remainder when one number is divided by another.\n" +
+                    "A. /, %\n" +
+                    "B. –, %\n" +
+                    "C. %, <\n" +
+                    "D. –, ||");
+            add("What is the output of the following application?\n\n" +
+                    "package transporter;\n" +
+                    "public class Rematerialize {\n" +
+                    "   public static void main(String[] input) {\n" +
+                    "       int dog = 11;\n" +
+                    "       int cat = 3;\n" +
+                    "       int partA = dog / cat;\n" +
+                    "       int partB = dog % cat;\n" +
+                    "       int newDog = partB + partA * cat;\n" +
+                    "       System.out.print(newDog);\n" +
+                    "   }\n" +
+                    "}\n\n" +
+                    "A. 9\n" +
+                    "B. 11\n" +
+                    "C. 15\n" +
+                    "D. The code does not compile.");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
             add("");
             add("");
             add("");
