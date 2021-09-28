@@ -7,8 +7,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-
-
     public static void main(String[] args) {
         Questions questions = new Questions();
         Answers answers = new Answers();
@@ -22,6 +20,7 @@ public class Main {
                 "This image will barely be recognisable.\n" +
                 "Just know they are supposed to be 3 interlocking circles\n" +
                 "Thanks in advance! :D !!!\n");
+
         System.out.println("Ready? Y/N");
         String go = "";
         while (!go.toLowerCase(Locale.ROOT).equals("y")||!go.toLowerCase(Locale.ROOT).equals("n")){
@@ -44,7 +43,8 @@ public class Main {
             }
             else
                 System.out.println("Incorrect. Better luck next time here is the explanation: \n" + explanation.explanations.get(questionNo));
-            System.out.println("\nYour current score is "+correct + "/" + total + " or " + (correct/total)*100 + "%");
+            double percentage = (double) ((correct*100)/total);
+            System.out.println("\nYour current score is "+correct + "/" + total + " or " + percentage + "%");
             System.out.println("\nPress enter to continue, press C to stop");
             while (!go.toLowerCase(Locale.ROOT).equals("")||!go.toLowerCase(Locale.ROOT).equals("c")){
                 scanner.nextLine();
